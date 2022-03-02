@@ -1,0 +1,237 @@
+/* Tablet */
+
+@media (min-width: 740px) and (max-width: 1024px) {
+    .container {
+        overflow-x: hidden;
+    }
+    .header-name {
+        font-size: 2.8rem;
+        margin-top: 40px;
+    }
+    .content {}
+    .music-control {
+        opacity: .1;
+    }
+    .message-modal {
+        /* margin-top: 30px; */
+    }
+    .btn--yes {
+        position: absolute;
+        top: 198px;
+        left: 60px;
+    }
+    .btn--no {
+        position: absolute;
+        top: 198px;
+        right: 70px;
+    }
+    .footer {
+        overflow: hidden;
+        /* height: 19rem; */
+        padding: 10px 0;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 739px) {
+    .header {
+        height: 192px;
+    }
+    .header-name {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .header-description {
+        font-size: 2rem;
+        line-height: 3.7rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .content {
+        padding: 0;
+    }
+    .answer-question {
+        display: flex;
+        justify-content: center;
+    }
+    .btn--yes {
+        position: absolute;
+        width: var(--width-btn);
+        left: 30px;
+        top: 100px
+    }
+    .btn--no {
+        width: var(--width-btn);
+        position: absolute;
+        top: 280px;
+        left: 30px;
+    }
+    .message-modal {
+        width: 430px;
+        margin-top: 260px;
+    }
+    .heading-name {
+        padding: 0 12px;
+    }
+    .heading-msg {
+        padding: 20px 20px;
+    }
+    .footer-modal {
+        display: flex;
+        justify-content: center;
+    }
+    .footer {
+        height: 6rem;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .header {
+        height: 192px;
+    }
+    .header-name {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+    .header-description {
+        font-size: 2rem;
+        line-height: 3.7rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+    }
+    .content {
+        padding: 0;
+    }
+    .answer-question {
+        display: flex;
+        justify-content: center;
+    }
+    .btn--yes {
+        position: absolute;
+        width: var(--width-btn);
+        left: 30px;
+        top: 100px
+    }
+    .btn--no {
+        width: var(--width-btn);
+        position: absolute;
+        top: 280px;
+        left: 30px;
+    }
+    .message-modal {
+        width: 375px;
+        margin-top: 160px;
+    }
+    .heading-name {
+        padding: 0 12px;
+    }
+    .heading-msg {
+        padding: 20px 20px;
+    }
+    .header-description {
+        margin-top: -20px;
+    }
+    .footer-modal {
+        display: flex;
+        justify-content: center;
+    }
+    .btn-close {
+        width: 150%;
+    }
+    .btn-red,
+    .btn-blue {
+        width: 100%;
+    }
+    .footer {
+        height: 6rem;
+        padding: 0;
+    }
+}
+
+@media (min-width: 380px) and (max-width: 412px) {
+    .container {
+        overflow-x: hidden;
+    }
+    .header-name {
+        font-size: 2.8rem;
+        margin-top: 5px;
+    }
+    .header-description {
+        margin-top: -20px;
+    }
+    .content {}
+    .music-control {
+        opacity: .1;
+    }
+    .message-modal {
+        margin-top: 30px;
+        width: 410px;
+    }
+    .btn--yes {
+        position: absolute;
+        top: 198px;
+        left: 60px;
+    }
+    .btn--no {
+        position: absolute;
+        top: 198px;
+        right: 70px;
+    }
+    .footer {
+        overflow: hidden;
+        /* height: 19rem; */
+        padding: 10px 0;
+    }
+}
+
+@media (max-width: 280px) {
+    .container {
+        overflow-x: hidden;
+    }
+    .header-name {
+        font-size: 2.8rem;
+        margin-top: 5px;
+    }
+    .header-description {
+        margin-top: -20px;
+    }
+    .content {}
+    .music-control {
+        opacity: .1;
+    }
+    .message-modal {
+        margin-top: 60px;
+        width: 280px;
+    }
+    .message {
+        font-size: 1.3rem;
+    }
+    .btn--yes {
+        position: absolute;
+        top: 198px;
+        left: 45px;
+        width: 75%;
+    }
+    .btn--no {
+        position: absolute;
+        top: 198px;
+        right: 70px;
+        width: 75%;
+    }
+    .footer {
+        overflow: hidden;
+        /* height: 19rem; */
+        padding: 10px 0;
+    }
+    .btn-close,
+    .btn-red,
+    .btn-blue {
+        width: 200%;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,9 @@
+const nameGirl = 'To : Duyen';
+const giftUrl = 'https://www.facebook.com/groups/165460116804572';
+const eventName = 'Happy 8/3 !!!';
+const titleCard = 'For Vit girls';
+const contentCard = '\nChuc ban luon luon xinh dep va hanh phuc ! Chuc ban co duoc minhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh !';
+const giftImage = 'hot-girl.png';
+const giftBg = 'valentines.jpg'
+const base64 = '';
+const giftImageBase64 = "data:image/png;base64, " + base64;
