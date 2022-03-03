@@ -7,6 +7,7 @@
     --width-btn: 340px;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Courier+Prime:ital@1&family=Fira+Mono:wght@500;700&family=Lato:ital,wght@1,300&family=PT+Mono&family=Pacifico&family=Ubuntu:ital,wght@1,300&display=swap');
 
 /* reset css */
 
@@ -17,9 +18,15 @@
 }
 
 html {
-    font-size: 62.5%;
+    font-size: 80%;
     line-height: 1.6rem;
-    font-family: "Pacifico", cursive;
+    /* font-family: "Pacifico", cursive; */
+    /* font-family: 'Allura', cursive; */
+    font-family: 'Fira Mono', monospace;
+    font-weight: 700;
+    /* font-family: 'Courier Prime', monospace; */
+    /* font-family: 'Lato', sans-serif; */
+    /* font-family: Times, "Times New Roman", serift; */
     height: 100vh;
 }
 
@@ -40,6 +47,7 @@ body {
     flex-direction: column;
     flex: 1;
     background-image: linear-gradient(to right top, #cb5eee, #4be1ec);
+    /* background-image: url("../valentines.jpg"); */
     animation: changeColor 4s ease-in-out;
     -webkit-animation: changeColor 4s ease-in-out;
     -moz-animation: changeColor 4s ease-in-out;
@@ -65,8 +73,8 @@ body {
 }
 
 .header-name {
-    margin: 10px;
-    font-size: 4rem;
+    margin: 30px;
+    font-size: 3.3rem;
     color: var(--text-color);
     padding: 8px 0;
 }
@@ -123,15 +131,16 @@ body {
     top: 198px;
     left: 420px;
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto !important;
+    width: 20%;
 }
 
 .btn--no {
     position: absolute;
     top: 198px;
-    right: 420px;
+    right: 240px;
     cursor: url(https://cur.cursors-4u.net/symbols/sym-1/sym49.cur), auto !important;
     background-image: linear-gradient(to right, #16A085 0%, #F4D03F 51%, #16A085 100%);
-    width: 20%;
+    width: 27%;
 }
 
 .btn--yes:hover {
@@ -198,6 +207,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: transparent;
+    /* background-image: url("../valentines.jpg"); */
 }
 
 .modal__body {

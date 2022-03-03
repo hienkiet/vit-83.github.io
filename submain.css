@@ -1,0 +1,224 @@
+@import url(https://fonts.googleapis.com/css?family=Pacifico);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+:root {
+    --pink-color: #ffc0cb;
+}
+
+body {
+    background: url(https://subtlepatterns.com/patterns/noise_lines.png);
+    font-family: "Pacifico", cursive;
+    overflow: hidden;
+    color: #fff;
+}
+
+.bgoverlay {
+    background: rgb(103, 58, 183);
+    background: rgba(103, 58, 183, 0.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.container {
+    position: relative;
+    margin: 120px auto 0 auto;
+    width: 320px;
+}
+
+.ico {
+    display: block;
+    width: 320px;
+    height: 320px;
+}
+
+.open .ico {
+    animation: open 4s;
+    transform: scale(10);
+}
+
+.ico .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -95px;
+    margin-top: -73px;
+    z-index: 4;
+    font-size: 50px;
+    font-family: "Pacifico", cursive;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.open .ico .title {
+    opacity: 0;
+    transition: all 0.3s ease;
+    top: -100px;
+}
+
+.ico:before,
+.ico:after,
+.ico2:before,
+.ico2:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.ico:before,
+.ico:after,
+.ico2:before,
+.ico2:after {
+    display: block;
+    font-size: 20em;
+    color: #ff4081;
+    content: "\f004";
+    font-family: FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ico2:before,
+.ico2:after {
+    color: #e91e63;
+}
+
+.ico:before {
+    z-index: 3;
+}
+
+.ico:after {
+    animation: explode 4s infinite;
+}
+
+.ico2:before {
+    animation: explodeSmall 3s infinite;
+}
+
+.ico2:after {
+    animation: explodeSmall 2s infinite;
+}
+
+.endtext {
+    opacity: 0;
+    position: absolute;
+    top: -100px;
+    width: 200%;
+    left: -140px;
+}
+
+.open .endtext {
+    top: 0;
+    opacity: 1;
+    animation: show 5s;
+}
+
+.endtext .close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.endtext h1,
+.endtext h2,
+.endtext h3 {
+    text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    font-weight: normal;
+}
+
+.endtext h1 {
+    font-size: 50px;
+}
+
+.endtext h2 {
+    font-size: 30px;
+}
+
+.endtext h3 {
+    font-size: 20px;
+}
+
+@keyframes explode {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.6);
+        opacity: 0;
+    }
+}
+
+@keyframes explodeSmall {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.2);
+        opacity: 0;
+    }
+}
+
+@keyframes open {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(10);
+    }
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        top: -100px;
+    }
+    to {
+        opacity: 1;
+        top: 0;
+    }
+}
+
+.button1 {
+    background-image: linear-gradient(135deg, #008aff, #86d472);
+    border-radius: 10px;
+    box-sizing: border-box;
+    color: #ffffff;
+    display: block;
+    height: 50px;
+    font-size: 1.2em;
+    font-weight: 600;
+    padding: 4px;
+    position: relative;
+    text-decoration: none;
+    width: 7em;
+    z-index: 2;
+    cursor: pointer;
+    left: 260px;
+}
+
+.button1:hover {
+    color: #fff;
+}
+
+.button1 .btn1 {
+    align-items: center;
+    background: linear-gradient(to right, #ff6e7f 0%, #bfe9ff 51%, #ff6e7f 100%);
+    border-radius: 0px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+}
+
+.button1:hover .btn1 {
+    background: transparent;
+}

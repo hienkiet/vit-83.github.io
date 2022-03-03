@@ -35,20 +35,22 @@
 
 /* Mobile */
 
-@media (max-width: 739px) {
+@media screen and (max-width: 739px) {
     .header {
         height: 192px;
     }
     .header-name {
-        font-size: 2.5rem;
+        font-size: 1.95rem;
         line-height: 3rem;
+        margin-top: 7px;
     }
     .header-description {
-        font-size: 2rem;
+        font-size: 1.6rem;
         line-height: 3.7rem;
         display: -webkit-box;
         -webkit-box-orient: vertical;
         -webkit-line-clamp: 2;
+        /* top: 0px; */
     }
     .content {
         padding: 0;
@@ -61,16 +63,16 @@
         position: absolute;
         width: var(--width-btn);
         left: 30px;
-        top: 100px
+        top: 240px
     }
     .btn--no {
         width: var(--width-btn);
         position: absolute;
-        top: 280px;
+        top: 320px;
         left: 30px;
     }
     .message-modal {
-        width: 430px;
+        width: 414px;
         margin-top: 260px;
     }
     .heading-name {
@@ -83,6 +85,10 @@
         display: flex;
         justify-content: center;
     }
+    .btn-blue {
+        width: 75%;
+        height: auto;
+    }
     .footer {
         height: 6rem;
         padding: 0;
@@ -94,8 +100,9 @@
         height: 192px;
     }
     .header-name {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
         line-height: 3rem;
+        margin-top: 7px;
     }
     .header-description {
         font-size: 2rem;
@@ -114,8 +121,8 @@
     .btn--yes {
         position: absolute;
         width: var(--width-btn);
-        left: 30px;
-        top: 100px
+        left: 18px;
+        top: 200px
     }
     .btn--no {
         width: var(--width-btn);
@@ -135,6 +142,7 @@
     }
     .header-description {
         margin-top: -20px;
+        font-size: 1.5rem;
     }
     .footer-modal {
         display: flex;
@@ -150,42 +158,6 @@
     .footer {
         height: 6rem;
         padding: 0;
-    }
-}
-
-@media (min-width: 380px) and (max-width: 412px) {
-    .container {
-        overflow-x: hidden;
-    }
-    .header-name {
-        font-size: 2.8rem;
-        margin-top: 5px;
-    }
-    .header-description {
-        margin-top: -20px;
-    }
-    .content {}
-    .music-control {
-        opacity: .1;
-    }
-    .message-modal {
-        margin-top: 30px;
-        width: 410px;
-    }
-    .btn--yes {
-        position: absolute;
-        top: 198px;
-        left: 60px;
-    }
-    .btn--no {
-        position: absolute;
-        top: 198px;
-        right: 70px;
-    }
-    .footer {
-        overflow: hidden;
-        /* height: 19rem; */
-        padding: 10px 0;
     }
 }
 

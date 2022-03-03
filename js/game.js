@@ -746,7 +746,7 @@ function iHeartYou() {
     if (window.location.hash) {
         vtext.textContent = encryptString(decodeURIComponent(window.location.hash).substring(1));
     } else {
-        vtext.textContent = "a lovely message from me to you <3";
+        vtext.textContent = "Thay lời chúng tớ gửi đến cậu <3";
     }
 
     setTimeout(function() {
@@ -809,21 +809,21 @@ function decryptString(string) {
 }
 
 var yourMessage = document.getElementById("your_message");
-var yourLink = document.getElementById("your_link");
+// var yourLink = document.getElementById("your_link");
 
-function linkChangey() {
-    if (yourMessage.value == "") {
-        yourLink.value = "http://ncase.me/door/";
-    } else {
-        yourLink.value = "http://ncase.me/door/#" + encodeURIComponent(encryptString(yourMessage.value));
-    }
-};
-yourMessage.onchange = linkChangey;
-yourMessage.oninput = linkChangey;
-linkChangey();
-yourLink.onclick = function() {
-    yourLink.select();
-};
+// function linkChangey() {
+//     if (yourMessage.value == "") {
+//         yourLink.value = "http://ncase.me/door/";
+//     } else {
+//         yourLink.value = "http://ncase.me/door/#" + encodeURIComponent(encryptString(yourMessage.value));
+//     }
+// };
+// yourMessage.onchange = linkChangey;
+// yourMessage.oninput = linkChangey;
+// linkChangey();
+// yourLink.onclick = function() {
+//     yourLink.select();
+// };
 
 function socialShare(event, type) {
 
@@ -910,7 +910,7 @@ window.LEVEL_CONFIG = [
             { x: 0, y: 150, radius: 100 },
             { x: 300, y: 150, radius: 100 }
         ],
-        countdown: 90
+        countdown: 120
     },
 
     // HEART
@@ -927,7 +927,7 @@ window.LEVEL_CONFIG = [
             { x: 300, y: 300, radius: 145 }
         ],
         // SUPER HACK - for level 2, change timer so it's impossible to beat if you go BACKWARDS.
-        countdown: 200
+        countdown: 400
     },
 
     // U
@@ -939,7 +939,7 @@ window.LEVEL_CONFIG = [
         circles: [
             { x: 150, y: 150, radius: 115 }
         ],
-        countdown: 130
+        countdown: 400
     }
 
 ];
