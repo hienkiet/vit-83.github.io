@@ -1,3 +1,13 @@
+:root {
+    --white-color: #fff;
+    --pink-color: #ffc0cb;
+    --black-color: #000;
+    --text-color: #333;
+    --header-height: 124px;
+    --width-btn: 340px;
+    --red-color: red;
+}
+
 body {
     margin: 0;
     text-align: center;
@@ -221,7 +231,7 @@ input#your_link {
 }
 
 .btn-blue {
-    width: 25%;
+    width: 20%;
     height: 50px;
     font-size: 1.5rem;
     border-radius: 12px;
@@ -244,6 +254,10 @@ input#your_link {
     background-position: right center;
     /* change the direction of the change here */
     text-decoration: none;
+}
+
+.btn-cont {
+    color: var(--red-color);
 }
 
 #loading {
