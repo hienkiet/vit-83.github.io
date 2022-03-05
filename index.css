@@ -181,3 +181,33 @@ body {
 .card {
     width: 50%;
 }
+
+.btn-gallery {
+    background-image: linear-gradient( to right, #02aab0 0%, #00cdac 51%, #02aab0 100%);
+}
+
+.btn-gallery {
+    width: 7%;
+    height: 2%;
+    margin: 10px;
+    left: 250px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+    position: absolute;
+    top: 600;
+    left: 670;
+}
+
+.btn-gallery:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
